@@ -1,0 +1,2 @@
+INSERT INTO Staging_Race_and_Ethnicity(Race_and_Ethnicity)
+SELECT DISTINCT Race_and_Ethnicity from Staging_Master_s_Degrees_Awarded;

@@ -1,0 +1,1 @@
+INSERT INTO Staging_Institution_Type(Institution_Type) SELECT DISTINCT Institution_Type from Staging_Master_s_Degrees_Awarded;

@@ -1,0 +1,2 @@
+INSERT INTO Staging_Support_Mechanism (Support_Mechanism)
+SELECT DISTINCT Support_Mechanism from Staging_Graduate_Financial_Support;

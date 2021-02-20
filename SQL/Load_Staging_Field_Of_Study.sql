@@ -1,0 +1,9 @@
+INSERT INTO Staging_Field_Of_Study(Field_Name)
+Select Field_Name from
+(SELECT DISTINCT Field_Name from Staging_Graduate_Enrollment
+UNION
+SELECT DISTINCT Field_Name from Staging_International_Graduate_Enrollment
+UNION
+SELECT DISTINCT Field_Name from Staging_Graduate_Financial_Support
+UNION
+SELECT DISTINCT Field_Name from Staging_Master_s_Degrees_Awarded) Field_Name;
